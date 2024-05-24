@@ -14,9 +14,16 @@
 }
 
 .web_name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 2em;
   font-weight: 600;
   font-family: 'Times New Roman', Times, serif;
+}
+
+.web_name img {
+  width: 25%;
 }
 
 .nav_routing_container ul {
@@ -58,8 +65,12 @@
   }
 
   .web_name {
-    font-size: 1.8em;
+    font-size: 1.7em;
     width: 25%;
+  }
+
+  .web_name img {
+    width: 23%;
   }
 
   .nav_routing_container ul {
@@ -97,6 +108,15 @@
   .main_inner_nav_container{
     max-width: 640px;
   }
+
+  .web_name {
+    font-size: 1.7em;
+    width: 60%;
+  }
+
+  .web_name img {
+    width: 15%;
+  }
 }
 
 
@@ -106,7 +126,11 @@
   }
 
   .web_name {
-    width: 40%;
+    width: 60%;
+  }
+
+  .web_name img{
+    width: 20%;
   }
 
   .nav_manue_icon {

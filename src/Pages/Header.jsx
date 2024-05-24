@@ -37,6 +37,7 @@ const Header = () => {
       <div className="main_nav_container">
         <div className="main_inner_nav_container">
           <div className="web_name">
+            <img src="https://i.ibb.co/2q7PBfm/art-gallery-modern-logo-design-graphic-vector-633300-2007-Photoroom-png-Photoroom.png" alt="logo" />
             <h2>Art Gallary</h2>
           </div>
 

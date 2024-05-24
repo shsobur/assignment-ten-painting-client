@@ -4,9 +4,11 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
+import { FaGoogle } from "react-icons/fa";
+import { BsGithub } from "react-icons/bs";
 
 const SignUp = () => {
-  const { createUser } = useContext(AuthContext);
+  const { createUser, googleSignUp } = useContext(AuthContext);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
@@ -26,12 +28,10 @@ const SignUp = () => {
     if (password.length < 6) {
       setError("Your password should be at least 6 charatur or long");
       return;
-    } 
-    else if (!/[A-Z]/.test(password)) {
+    } else if (!/[A-Z]/.test(password)) {
       setError("Include at least one uppercase(A-Z) letter in your password");
       return;
-    } 
-    else if (!/[a-z]/.test(password)) {
+    } else if (!/[a-z]/.test(password)) {
       setError("Include at least one lowercase(a-z) letter in your password");
       return;
     }
@@ -49,12 +49,24 @@ const SignUp = () => {
           didOpen: (toast) => {
             toast.onmouseenter = Swal.stopTimer;
             toast.onmouseleave = Swal.resumeTimer;
-          }
+          },
         });
         Toast.fire({
           icon: "success",
-          title: "User create successfully"
+          title: "User create successfully",
         });
+        navigate("/");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+  const handelGoogleSignUp = () => {
+    googleSignUp()
+      .then((result) => {
+        const googleSignUpUser = result.user;
+        console.log(googleSignUpUser);
         navigate("/");
       })
       .catch((error) => {
@@ -133,6 +145,21 @@ const SignUp = () => {
                 </div>
               </label>
             </form>
+          </div>
+
+          <div className="signin_socialmedia_conraienr">
+            <ul>
+              <li>
+                <button onClick={handelGoogleSignUp}>
+                  <FaGoogle />
+                </button>
+              </li>
+              <li>
+                <button>
+                  <BsGithub />
+                </button>
+              </li>
+            </ul>
           </div>
 
           <div>
