@@ -1,0 +1,120 @@
+.main_signin_container {
+  height: calc(100vh - 70px);
+  width: 100%;
+}
+
+.main_inner_signin_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.main_signin_form_container {
+  height: auto;
+  width: 30%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #a2c4fa;
+}
+
+.signin_title_container {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.signin_title_container h2 {
+  margin: 0 0 20px ;
+}
+
+.signin_title_container img {
+  margin: auto;
+  width: 90%;
+}
+
+.signin_inputs p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.signin_input_container {
+  margin-top: 20px;
+}
+
+.signin_inputs input {
+  width: 100%;
+  border: 2px solid #242c36;
+  border-radius: 8px;
+  padding: 4px 10px 4px 10px ;
+  outline: none;
+}
+
+.signin_socialmedia_conraienr {
+  margin-top: 10px;
+}
+
+.signin_socialmedia_conraienr ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.signin_socialmedia_conraienr ul li {
+  font-size: 2rem;
+}
+
+
+
+@media screen and (max-width: 1280px) {
+  .main_inner_signin_container {
+    max-width: 1024px;
+  }
+
+  .main_signin_form_container {
+    width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .main_inner_signin_container {
+    max-width: 768px;
+  }
+
+  .main_signin_form_container {
+    width: 60%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .main_inner_signin_container {
+    max-width: 640px;
+  }
+
+  .main_signin_form_container {
+    width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 640px) {
+  .main_inner_signin_container {
+    max-width: 475px;
+  }
+}
+
+
+@media screen and (max-width: 475px) {
+  .main_inner_signin_container {
+    width: 100%;
+    padding: 0 20px 0 20px;
+  }
+}
