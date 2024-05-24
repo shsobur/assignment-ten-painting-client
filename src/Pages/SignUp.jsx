@@ -8,7 +8,7 @@ import { FaGoogle } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 
 const SignUp = () => {
-  const { createUser, googleSignUp } = useContext(AuthContext);
+  const { createUser, googleSignUp, githubSignUp } = useContext(AuthContext);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
@@ -73,6 +73,18 @@ const SignUp = () => {
         console.log(error);
       });
   };
+
+  const handelGithubSignUp = () => {
+    githubSignUp()
+    .then(result => {
+      const githubSignUpUser = result.user;
+      console.log (githubSignUpUser);
+      navigate("/");
+    })
+    .catch(error => {
+      console.log (error);
+    })
+  }
 
   return (
     <div className="main_signup_container">
@@ -155,7 +167,7 @@ const SignUp = () => {
                 </button>
               </li>
               <li>
-                <button>
+                <button onClick={handelGithubSignUp}>
                   <BsGithub />
                 </button>
               </li>

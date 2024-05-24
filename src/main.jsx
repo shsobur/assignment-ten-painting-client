@@ -8,6 +8,8 @@ import Home from "./Pages/Home.jsx";
 import SignIn from "./Pages/SignIn.jsx";
 import SignUp from "./Pages/SignUp.jsx";
 import AuthProvider from "./Provider/AuthProvider.jsx";
+import AddCraft from "./Pages/AddCraft.jsx";
+import PriverRoute from "./components/PrivetRoute/PriverRoute.jsx";
 
 
 const router = createBrowserRouter([
@@ -19,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "/addcraft",
+        element: <PriverRoute><AddCraft></AddCraft></PriverRoute>,
       },
       {
         path: "/signin",

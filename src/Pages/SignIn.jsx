@@ -7,7 +7,7 @@ import { AuthContext } from "../Provider/AuthProvider";
 import Swal from "sweetalert2";
 
 const SignIn = () => {
-  const { signInUser } = useContext(AuthContext);
+  const { signInUser, googleSignUp, githubSignUp } = useContext(AuthContext);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
@@ -35,11 +35,11 @@ const SignIn = () => {
           didOpen: (toast) => {
             toast.onmouseenter = Swal.stopTimer;
             toast.onmouseleave = Swal.resumeTimer;
-          }
+          },
         });
         Toast.fire({
           icon: "success",
-          title: "Sign In successfully"
+          title: "Sign In successfully",
         });
         navigate("/");
       })
@@ -48,6 +48,28 @@ const SignIn = () => {
         setError("invalid username and password");
       });
   };
+
+  const handelGoogleSignIn = () => {
+    googleSignUp()
+    .then(result => {
+      console.log (result.user);
+      navigate("/")
+    })
+    .catch(error => {
+      console.log (error);
+    })
+  }
+
+  const handelGithubSignIn = () => {
+    githubSignUp()
+    .then(result => {
+      console.log (result.user);
+      navigate("/");
+    })
+    .catch(error => {
+      console.log (error);
+    })
+  }
 
   return (
     <div className="main_signin_container">
@@ -91,12 +113,12 @@ const SignIn = () => {
               <div className="signin_socialmedia_conraienr">
                 <ul>
                   <li>
-                    <button>
+                    <button onClick={handelGoogleSignIn}>
                       <FaGoogle />
                     </button>
                   </li>
                   <li>
-                    <button>
+                    <button onClick={handelGithubSignIn}>
                       <BsGithub />
                     </button>
                   </li>

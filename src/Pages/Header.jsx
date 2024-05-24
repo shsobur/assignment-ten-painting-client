@@ -20,11 +20,11 @@ const Header = () => {
           didOpen: (toast) => {
             toast.onmouseenter = Swal.stopTimer;
             toast.onmouseleave = Swal.resumeTimer;
-          }
+          },
         });
         Toast.fire({
           icon: "success",
-          title: "Sign Out successfully"
+          title: "Sign Out successfully",
         });
       })
       .catch((error) => {
@@ -37,7 +37,10 @@ const Header = () => {
       <div className="main_nav_container">
         <div className="main_inner_nav_container">
           <div className="web_name">
-            <img src="https://i.ibb.co/2q7PBfm/art-gallery-modern-logo-design-graphic-vector-633300-2007-Photoroom-png-Photoroom.png" alt="logo" />
+            <img
+              src="https://i.ibb.co/2q7PBfm/art-gallery-modern-logo-design-graphic-vector-633300-2007-Photoroom-png-Photoroom.png"
+              alt="logo"
+            />
             <h2>Art Gallary</h2>
           </div>
 
@@ -53,11 +56,13 @@ const Header = () => {
                   <a>All Art & Craft Items</a>
                 </Link>
               </li>
-              <li>
-                <Link>
-                  <a>Add Craft Item</a>
-                </Link>
-              </li>
+              {user && (
+                <li>
+                  <Link to="/addcraft">
+                    <a>Add Craft Item</a>
+                  </Link>
+                </li>
+              )}
               <li>
                 <Link>
                   <a>My Art&Craft List</a>
@@ -68,7 +73,9 @@ const Header = () => {
 
           <div className="main_nav_btn_container">
             {user ? (
-              <button onClick={handelSignOut} className="btn btn-neutral">Sign Out</button>
+              <button onClick={handelSignOut} className="btn btn-neutral">
+                Sign Out
+              </button>
             ) : (
               <div className="main_nav_btn_container">
                 <div className="nav_btn_in">
@@ -122,7 +129,12 @@ const Header = () => {
 
                     <div>
                       {user ? (
-                        <button onClick={handelSignOut} className="btn btn-neutral">Sign Out</button>
+                        <button
+                          onClick={handelSignOut}
+                          className="btn btn-neutral"
+                        >
+                          Sign Out
+                        </button>
                       ) : (
                         <div className="flex items-center justify-center gap-5 text-[#ffffff]">
                           <li className="p-3 bg-slate-800 rounded-lg active:bg-slate-600">
