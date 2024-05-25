@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../../Styles/CraftSection.css";
 
 const CraftSection = () => {
@@ -5,27 +6,56 @@ const CraftSection = () => {
     <div className="main_craft_section_container">
       <div className="main_inner_craft_section_container">
         <div className="craft_section_left_container">
-
           <div className="craft_image_container">
-
-            <div className="craft_image_box_container" id="box_101">
-              {/* <img src="https://i.ibb.co/5rdC1PZ/multimediablock-7-percent-22portrait-4-percent-22-oil-paintpastel-on-canvas-8x10-inches-2023-1714409.jpg" /> */}
-            </div>
-            <div className="craft_image_box_container" id="box_102">
-              {/* <img src="https://i.ibb.co/swrt7WC/images.jpg" /> */}
-            </div>
-            <div className="craft_image_box_container" id="box_103">
-              {/* <img src="https://i.ibb.co/9N52Kyf/cranium-tom-fedro-fidostudio.jpg" /> */}
-            </div>
-            <div className="craft_image_box_container" id="box_104">
-              {/* <img src="https://i.ibb.co/MCgYjG1/112e3e001e07c86855e2b08b503e8323.jpg" /> */}
-            </div>
-
+            <div
+              className="craft_image_box_container"
+              id="box_101"
+              data-aos="fade-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            ></div>
+            <div
+              className="craft_image_box_container"
+              id="box_102"
+              data-aos="fade-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            ></div>
+            <div
+              className="craft_image_box_container"
+              id="box_103"
+              data-aos="fade-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            ></div>
+            <div
+              className="craft_image_box_container"
+              id="box_104"
+              data-aos="fade-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            ></div>
           </div>
-
         </div>
         <div className="craft_section_rigth_container">
-          <h1>box-2</h1>
+          <div className="right_craft_section_inner_container">
+            <h1
+              data-aos="fade-down"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="3000"  
+            >
+              Craft Your Item Now!
+            </h1>
+            <p>
+              “Art is never finished, only abandoned.” – Leonardo Da Vinci.
+              “Everything has its beauty, but not everyone sees it.”
+            </p>
+            <Link to="/addcraft">
+              <button className="btn btn-neutral text-lg pl-8 pr-8">
+                Craft
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

@@ -13,8 +13,12 @@ import "../Styles/Header.css";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import CraftSection from "../components/CraftSection/CraftSection";
+import { useContext } from "react";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Home = () => {
+  const { user } = useContext(AuthContext);
+
   return (
     <div>
       <div className="main_slider_container">
@@ -39,7 +43,7 @@ const Home = () => {
         <SwiperSlide><img src="https://i.ibb.co/4gsty2v/birmingham-museums-trust-4-GNk7lexu-Hw-unsplash.jpg"></img></SwiperSlide> */}
           </Swiper>
         </div>
-        <CraftSection></CraftSection>
+        <div>{user && <CraftSection></CraftSection>}</div>
       </div>
     </div>
   );
