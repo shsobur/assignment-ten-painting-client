@@ -1,0 +1,97 @@
+.main_craft_section_container {
+  height: 70vh;
+  width: 100%;
+  margin-top: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://i.ibb.co/L0JbTHV/abstract-pink-background-698452-702-Photoroom-2.jpg");
+}
+
+.main_inner_craft_section_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  border: 2px solid purple;
+}
+
+.craft_section_left_container {
+  height: 100%;
+  width: 60%;
+  border: 2px solid rgb(220, 17, 17);
+}
+
+.craft_section_rigth_container {
+  height: 100%;
+  width: 40%;
+}
+
+.craft_image_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.craft_image_box_container {
+  height: 90%;
+  width: 80%;
+  border: 2px solid teal;
+}
+
+#box_101 {
+  border-radius: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://i.ibb.co/QCCJTBq/img-2893.jpg");
+}
+
+#box_102 {
+  border-radius: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://i.ibb.co/z8ffNCj/multimediablock-7-percent-22portrait-4-percent-22-oil-paintpastel-on-canvas-8x10-inches-2023-1714409.jpg");
+}
+
+#box_103 {
+  border-radius: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://i.ibb.co/nbwWLhX/cranium-tom-fedro-fidostudio.jpg");
+}
+
+#box_104 {
+  border-radius: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://i.ibb.co/Xpq7X9j/file-20190201-75085-1mor4cs.png");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+  .main_inner_craft_section_container {
+    max-width: 1024px;
+  }
+}

@@ -10,6 +10,7 @@ import SignUp from "./Pages/SignUp.jsx";
 import AuthProvider from "./Provider/AuthProvider.jsx";
 import AddCraft from "./Pages/AddCraft.jsx";
 import PriverRoute from "./components/PrivetRoute/PriverRoute.jsx";
+import CraftSection from "./components/CraftSection/CraftSection.jsx";
 
 
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/addcraft",
         element: <PriverRoute><AddCraft></AddCraft></PriverRoute>,
+      },
+      {
+        path: "craftsection",
+        element: <PriverRoute><CraftSection></CraftSection></PriverRoute>
       },
       {
         path: "/signin",
