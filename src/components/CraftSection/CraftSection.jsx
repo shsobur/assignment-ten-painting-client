@@ -42,7 +42,7 @@ const CraftSection = () => {
             <h1
               data-aos="fade-down"
               data-aos-easing="ease-out-cubic"
-              data-aos-duration="3000"  
+              data-aos-duration="3000"
             >
               Craft Your Item Now!
             </h1>

@@ -11,6 +11,7 @@ import AuthProvider from "./Provider/AuthProvider.jsx";
 import AddCraft from "./Pages/AddCraft.jsx";
 import PriverRoute from "./components/PrivetRoute/PriverRoute.jsx";
 import CraftSection from "./components/CraftSection/CraftSection.jsx";
+import CraftItem from "./Pages/CraftItem.jsx";
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,11 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "/craftitem",
+        element : <CraftItem></CraftItem>,
+        loader: () => fetch("http://localhost:5000/addcraft"),
       },
       {
         path: "/addcraft",
