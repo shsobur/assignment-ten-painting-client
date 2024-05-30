@@ -5,6 +5,7 @@ import { IoIosStarOutline } from "react-icons/io";
 
 const CraftItemCart = ({ paintCraft }) => {
   const {
+    _id,
     image,
     itme_name,
     subcategory_name,
@@ -56,7 +57,7 @@ const CraftItemCart = ({ paintCraft }) => {
                   </span>
                 </div>
                 <div className="mt-5">
-                  <Link>
+                  <Link to={`/itemdetails/${_id}`}>
                     <button className="btn btn-neutral">View Details</button>
                   </Link>
                 </div>

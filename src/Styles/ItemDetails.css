@@ -1,0 +1,26 @@
+.main_details_container h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.main_details_container p {
+  font-size: 1rem;
+  color: #a7a7a7;
+}
+
+.about_section_details_container {
+  margin-top: 30px;
+}
+
+.main_description_container {
+  height: auto;
+  width: 100%;
+}
+
+.main_description_inner_container {
+  height: 100%;
+  max-width: 100%;
+  padding: 10px 20px 20px 20px;
+  background-color: #ffffff;
+}
