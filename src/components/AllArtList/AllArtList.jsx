@@ -3,37 +3,49 @@ import "../../Styles/AllArtList.css";
 import { IoIosStarHalf } from "react-icons/io";
 
 const AllArtList = ({ paintCraft }) => {
+  const {
+    image,
+    itme_name,
+    subcategory_name,
+    price,
+    rating,
+    customization,
+    processing_time,
+    stock_status,
+    user_name,
+    user_email,
+    description,
+  } = paintCraft;
+
   return (
     <tr className="hover:bg-[#a2c4fab2]">
       <td className="py-2 px-4 border-b border-[#a2c4fa]">
         <div className="main_username_container">
-
           <div className="user_image_contaienr">
-            <img src="https://i.ibb.co/qDF2tdh/watercolor-painting-mountain-forest-landscape-with-river-forest-river-hand-painted-illustration-2211.jpg" />
+            <img src={image} />
           </div>
           <div className="user_name_container">
-            <h2>Watercolor painting</h2>
-            <p>sobur@gmaol456.com</p>
+            <h2>{user_name}</h2>
+            <p>{user_email}</p>
           </div>
-
         </div>
       </td>
       <td className="py-2 px-4 border-b border-[#a2c4fa]">
         <div>
-
           <div className="name_titel_container">
-            <h2>Watercolor painting</h2>
-            <p><span>High Renaissance Art</span></p>
+            <h2>{itme_name}</h2>
+            <p>
+              <span>{subcategory_name}</span>
+            </p>
           </div>
-
         </div>
       </td>
       <td className="py-2 px-4 border-b border-[#a2c4fa]">
         <div className="flex items-center gap-2">
-
-          <div className="text-[#5e6269] font-semibold">4.8</div>
-          <div><IoIosStarHalf /></div>
-
+          <div className="text-[#5e6269] font-semibold">{rating}</div>
+          <div>
+            <IoIosStarHalf />
+          </div>
         </div>
       </td>
       <td className="py-2 px-4 border-b border-[#a2c4fa]">
