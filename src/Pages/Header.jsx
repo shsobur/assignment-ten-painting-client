@@ -46,28 +46,35 @@ const Header = () => {
 
           <div className="nav_routing_container">
             <ul>
-              <li>
-                <Link to="/">
-                  <a>Home</a>
-                </Link>
-              </li>
-              <li>
-                <Link to="/craftitem">
-                  <a>All Art & Craft Items</a>
-                </Link>
-              </li>
-              {user && (
+              <Link to="/">
                 <li>
-                  <Link to="/addcraft">
-                    <a>Add Craft Item</a>
-                  </Link>
+                  <a>Home</a>
                 </li>
-              )}
-              <li>
-                <Link>
-                  <a>My Art&Craft List</a>
+              </Link>
+              <Link to="/craftitem">
+                <li>
+                  <a>Craft Items</a>
+                </li>
+              </Link>
+              <Link to="/allart">
+                <li>
+                  <a>All Art & Craft Items</a>
+                </li>
+              </Link>
+              {user && (
+                <Link to="/addcraft">
+                  <li>
+                    <a>Add Craft Item</a>
+                  </li>
                 </Link>
-              </li>
+              )}
+              {user && (
+                <Link>
+                  <li>
+                    <a>My Art&Craft List</a>
+                  </li>
+                </Link>
+              )}
             </ul>
           </div>
 

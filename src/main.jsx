@@ -13,7 +13,7 @@ import PriverRoute from "./components/PrivetRoute/PriverRoute.jsx";
 import CraftSection from "./components/CraftSection/CraftSection.jsx";
 import CraftItem from "./Pages/CraftItem.jsx";
 import ItemDetails from "./components/ItemDetails/ItemDetails.jsx";
-
+import AllArt from "./Pages/AllArt.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,21 +27,35 @@ const router = createBrowserRouter([
       },
       {
         path: "/craftitem",
-        element : <CraftItem></CraftItem>,
+        element: <CraftItem></CraftItem>,
+        loader: () => fetch("http://localhost:5000/addcraft"),
+      },
+      {
+        path: "/allart",
+        element: <AllArt></AllArt>,
         loader: () => fetch("http://localhost:5000/addcraft"),
       },
       {
         path: "/itemdetails/:id",
         element: <ItemDetails></ItemDetails>,
-        loader: ({params}) => fetch(`http://localhost:5000/addcraft/${params.id}`),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/addcraft/${params.id}`),
       },
       {
         path: "/addcraft",
-        element: <PriverRoute><AddCraft></AddCraft></PriverRoute>,
+        element: (
+          <PriverRoute>
+            <AddCraft></AddCraft>
+          </PriverRoute>
+        ),
       },
       {
         path: "craftsection",
-        element: <PriverRoute><CraftSection></CraftSection></PriverRoute>
+        element: (
+          <PriverRoute>
+            <CraftSection></CraftSection>
+          </PriverRoute>
+        ),
       },
       {
         path: "/signin",

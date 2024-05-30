@@ -1,0 +1,33 @@
+.main_art_container {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  border: 2px solid purple;
+}
+
+.main_art_inner_container {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #a2c4fa;
+}
+
+.art_section_title {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px
+}
+
+.art_section_title h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .main_art_inner_container {
+    overflow: auto;
+  }
+}

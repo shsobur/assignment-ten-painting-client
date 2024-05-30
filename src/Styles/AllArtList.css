@@ -1,0 +1,41 @@
+.main_username_container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user_image_contaienr {
+  height: 50px;
+  width: 80px;
+}
+
+.user_image_contaienr img {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.user_name_container h2 {
+  font-weight: 500;
+  color: #5e6269;
+}
+
+.user_name_container p {
+  font-size: 14px;
+  color: #9ca4ae;
+}
+
+.name_titel_container h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.name_titel_container span {
+  font-size: 14px;
+  padding: 2px 8px 2px 8px;
+  border-radius: 8px;
+  font-weight: 400;
+  color: #4b4b4b;
+  background-color: #dadada;
+}
