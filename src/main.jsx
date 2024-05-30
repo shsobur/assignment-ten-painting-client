@@ -33,6 +33,7 @@ const router = createBrowserRouter([
       {
         path: "/itemdetails/:id",
         element: <ItemDetails></ItemDetails>,
+        loader: ({params}) => fetch(`http://localhost:5000/addcraft/${params.id}`),
       },
       {
         path: "/addcraft",
