@@ -30,7 +30,7 @@ const ItemDetails = () => {
                         {/* row 1 */}
                         <tr>
                           <th>Price : </th>
-                          <td>{paintInfo.price}$</td>
+                          <td>{paintInfo.price}</td>
                         </tr>
                         {/* row 2 */}
                         <tr>

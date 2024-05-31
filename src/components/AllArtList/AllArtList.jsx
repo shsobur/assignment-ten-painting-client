@@ -1,20 +1,17 @@
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 import "../../Styles/AllArtList.css";
 import { IoIosStarHalf } from "react-icons/io";
 
 const AllArtList = ({ paintCraft }) => {
   const {
+    _id,
     image,
     itme_name,
     subcategory_name,
-    price,
     rating,
-    customization,
-    processing_time,
-    stock_status,
     user_name,
     user_email,
-    description,
   } = paintCraft;
 
   return (
@@ -50,7 +47,7 @@ const AllArtList = ({ paintCraft }) => {
       </td>
       <td className="py-2 px-4 border-b border-[#a2c4fa]">
         <div>
-          <Link>
+          <Link to={`/itemdetails/${_id}`}>
             <button className="btn btn-neutral btn-sm">View Details</button>
           </Link>
         </div>
@@ -58,5 +55,9 @@ const AllArtList = ({ paintCraft }) => {
     </tr>
   );
 };
+
+AllArtList.propTypes = {
+  paintCraft: PropTypes.object,
+}
 
 export default AllArtList;

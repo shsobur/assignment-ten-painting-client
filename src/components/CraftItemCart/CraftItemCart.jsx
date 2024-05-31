@@ -9,14 +9,8 @@ const CraftItemCart = ({ paintCraft }) => {
     image,
     itme_name,
     subcategory_name,
-    price,
     rating,
-    customization,
-    processing_time,
     stock_status,
-    user_name,
-    user_email,
-    description,
   } = paintCraft;
   return (
     <div>
@@ -31,8 +25,6 @@ const CraftItemCart = ({ paintCraft }) => {
             >
               <Link
                 rel="noopener noreferrer"
-                href="#"
-                aria-label="Te nulla oportere reprimique his dolorum"
               >
                 <img
                   alt=""

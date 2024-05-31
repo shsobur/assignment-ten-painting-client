@@ -17,11 +17,11 @@ const AllArt = () => {
           <table className="min-w-full bg-white">
             <thead>
               <tr>
-                <th className="py-2 px-4 border-b-2 border-[#a2c4fa] text-left">
+                <th className="py-2 px-4 text-left border-b-2 border-[#a2c4fa] ">
                   Users
                 </th>
-                <th className="py-2 px-4 border-b-2 border-[#a2c4fa] text-left">Name</th>
-                <th className="py-2 px-4 border-b-2 border-[#a2c4fa] text-left">Rating</th>
+                <th className="py-2 border-[#a2c4fa] px-4 border-b-2  text-left">Name</th>
+                <th className="py-2 px-4  border-[#a2c4fa] border-b-2 text-left">Rating</th>
                 <th className="py-2 px-4 border-b-2 border-[#a2c4fa] text-left">Visit</th>
               </tr>
             </thead>

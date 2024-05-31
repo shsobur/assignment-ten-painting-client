@@ -14,6 +14,7 @@ import CraftSection from "./components/CraftSection/CraftSection.jsx";
 import CraftItem from "./Pages/CraftItem.jsx";
 import ItemDetails from "./components/ItemDetails/ItemDetails.jsx";
 import AllArt from "./Pages/AllArt.jsx";
+import MyArtList from "./Pages/MyArtList.jsx";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,14 @@ const router = createBrowserRouter([
         element: (
           <PriverRoute>
             <AddCraft></AddCraft>
+          </PriverRoute>
+        ),
+      },
+      {
+        path: "/myartlist",
+        element: (
+          <PriverRoute>
+            <MyArtList></MyArtList>
           </PriverRoute>
         ),
       },

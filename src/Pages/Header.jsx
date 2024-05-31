@@ -69,7 +69,7 @@ const Header = () => {
                 </Link>
               )}
               {user && (
-                <Link>
+                <Link to="/myartlist">
                   <li>
                     <a>My Art&Craft List</a>
                   </li>
