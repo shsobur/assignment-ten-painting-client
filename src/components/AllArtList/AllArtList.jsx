@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import "../../Styles/AllArtList.css";
 import { IoIosStarHalf } from "react-icons/io";
 
@@ -17,7 +17,12 @@ const AllArtList = ({ paintCraft }) => {
   return (
     <tr className="hover:bg-[#a2c4fab2]">
       <td className="py-2 px-4 border-b border-[#a2c4fa]">
-        <div className="main_username_container">
+        <div
+          className="main_username_container"
+          data-aos="zoom-in"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+        >
           <div className="user_image_contaienr">
             <img src={image} />
           </div>
@@ -28,7 +33,11 @@ const AllArtList = ({ paintCraft }) => {
         </div>
       </td>
       <td className="py-2 px-4 border-b border-[#a2c4fa]">
-        <div>
+        <div
+          data-aos="zoom-in"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+        >
           <div className="name_titel_container">
             <h2>{itme_name}</h2>
             <p>
@@ -38,7 +47,12 @@ const AllArtList = ({ paintCraft }) => {
         </div>
       </td>
       <td className="py-2 px-4 border-b border-[#a2c4fa]">
-        <div className="flex items-center gap-2">
+        <div
+          className="flex items-center gap-2"
+          data-aos="zoom-in"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+        >
           <div className="text-[#5e6269] font-semibold">{rating}</div>
           <div>
             <IoIosStarHalf />
@@ -46,7 +60,11 @@ const AllArtList = ({ paintCraft }) => {
         </div>
       </td>
       <td className="py-2 px-4 border-b border-[#a2c4fa]">
-        <div>
+        <div
+          data-aos="zoom-in"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+        >
           <Link to={`/itemdetails/${_id}`}>
             <button className="btn btn-neutral btn-sm">View Details</button>
           </Link>
@@ -58,6 +76,6 @@ const AllArtList = ({ paintCraft }) => {
 
 AllArtList.propTypes = {
   paintCraft: PropTypes.object,
-}
+};
 
 export default AllArtList;

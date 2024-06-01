@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../Styles/Header.css";
 import { TiThMenuOutline } from "react-icons/ti";
 import { useContext } from "react";
@@ -46,34 +46,69 @@ const Header = () => {
 
           <div className="nav_routing_container">
             <ul>
-              <Link to="/">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? "bg-[#14143c] rounded-lg text-[#ffffff]"
+                    : "text-[#242c36]"
+                }
+              >
                 <li>
                   <a>Home</a>
                 </li>
-              </Link>
-              <Link to="/craftitem">
+              </NavLink>
+              <NavLink
+                to="/craftitem"
+                className={({ isActive }) =>
+                  isActive
+                    ? "bg-[#14143c] rounded-lg text-[#ffffff]"
+                    : "text-[#242c36]"
+                }
+              >
                 <li>
                   <a>Craft Items</a>
                 </li>
-              </Link>
-              <Link to="/allart">
+              </NavLink>
+              <NavLink
+                to="/allart"
+                className={({ isActive }) =>
+                  isActive
+                    ? "bg-[#14143c] rounded-lg text-[#ffffff]"
+                    : "text-[#242c36]"
+                }
+              >
                 <li>
                   <a>All Art & Craft Items</a>
                 </li>
-              </Link>
+              </NavLink>
               {user && (
-                <Link to="/addcraft">
+                <NavLink
+                  to="/addcraft"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "bg-[#14143c] rounded-lg text-[#ffffff]"
+                      : "text-[#242c36]"
+                  }
+                >
                   <li>
                     <a>Add Craft Item</a>
                   </li>
-                </Link>
+                </NavLink>
               )}
               {user && (
-                <Link to="/myartlist">
+                <NavLink
+                  to="/myartlist"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "bg-[#14143c] rounded-lg text-[#ffffff]"
+                      : "text-[#242c36]"
+                  }
+                >
                   <li>
                     <a>My Art&Craft List</a>
                   </li>
-                </Link>
+                </NavLink>
               )}
             </ul>
           </div>
@@ -110,7 +145,7 @@ const Header = () => {
               </button>
             </div>
 
-            <dialog id="101" className="modal modal-bottom sm:modal-middle">
+            <dialog id="101" className="modal modal-bottom sm:modal-top">
               <div className="modal-box bg-[#ffffff]">
                 <div className="flex items-center justify-center text-center">
                   <ul className="font-semibold text-xl text-[#000000]">
@@ -119,19 +154,68 @@ const Header = () => {
                     </p>
 
                     <li className="mb-5 p-1 rounded-lg border-[#26214c] active:bg-[#ededed]">
-                      <Link to="/">Home</Link>
+                      <NavLink
+                        to="/"
+                        className={({ isActive }) =>
+                          isActive
+                            ? "bg-[#14143c] p-2 rounded-lg text-[#ffffff]"
+                            : "text-[#242c36]"
+                        }
+                      >
+                        Home
+                      </NavLink>
                     </li>
 
                     <li className="mb-5 p-1 rounded-lg border-[#26214c] active:bg-[#ededed]">
-                      All Art & Craft Items
+                      <NavLink
+                        to="/craftitem"
+                        className={({ isActive }) =>
+                          isActive
+                            ? "bg-[#14143c] p-2 rounded-lg text-[#ffffff]"
+                            : "text-[#242c36]"
+                        }
+                      >
+                        Craft Items
+                      </NavLink>
                     </li>
 
                     <li className="mb-5 p-1 rounded-lg border-[#26214c] active:bg-[#ededed]">
-                      Add Craft Item
+                      <NavLink
+                        to="/allart"
+                        className={({ isActive }) =>
+                          isActive
+                            ? "bg-[#14143c] p-2 rounded-lg text-[#ffffff]"
+                            : "text-[#242c36]"
+                        }
+                      >
+                        All Art & Craft Items
+                      </NavLink>
                     </li>
 
                     <li className="mb-5 p-1 rounded-lg border-[#26214c] active:bg-[#ededed]">
-                      My Art&Craft List
+                      <NavLink
+                        to="/addcraft"
+                        className={({ isActive }) =>
+                          isActive
+                            ? "bg-[#14143c] p-2 rounded-lg text-[#ffffff]"
+                            : "text-[#242c36]"
+                        }
+                      >
+                        Add Craft Item
+                      </NavLink>
+                    </li>
+
+                    <li className="mb-5 p-1 rounded-lg border-[#26214c] active:bg-[#ededed]">
+                      <NavLink
+                        to="/myartlist"
+                        className={({ isActive }) =>
+                          isActive
+                            ? "bg-[#14143c] p-2 rounded-lg text-[#ffffff]"
+                            : "text-[#242c36]"
+                        }
+                      >
+                        My Art&Craft List
+                      </NavLink>
                     </li>
 
                     <div>
