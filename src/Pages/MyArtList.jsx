@@ -146,7 +146,7 @@ const MyArtList = () => {
                         </div>
                         <div className="flex items-center gap-10 ">
                           <div>
-                            <Link to="/updatecraft">
+                            <Link to={`/updatecraft/${myArt._id}`}>
                               <button className="btn btn-neutral btn-sm">
                                 Update
                               </button>

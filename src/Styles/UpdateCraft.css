@@ -1,7 +1,6 @@
 .main_update_page_container {
   height: auto;
   width: 100%;
-  border: 2px solid palegreen;
 }
 
 .main_inner_update_page_container {
@@ -30,7 +29,12 @@
   width: 800px;
 }
 
-.update_form_tatle img {
+.update_form_title h2 { 
+  font-size: 2.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.update_form_title img {
   width: 40%;
   margin: auto;
 }
@@ -52,5 +56,100 @@
 @media screen and (max-width: 1024px) {
   .main_inner_update_page_container {
     max-width: 768px;
+  }
+
+  .update_form_title h2 {
+    font-size: 2.2rem;
+  }
+
+  .update_form_title p {
+    padding: 20px 30px 10px 30px;
+  }
+
+  .update_form_title img {
+    width: 45%;
+  }
+
+  #Update_inputs input {
+    width: 650px;
+  }
+
+  .update_sub_btn {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main_inner_update_page_container {
+    max-width: 640px;
+  }
+
+  .update_form_title h2 {
+    font-size: 2rem;
+  }
+
+  .update_form_title p {
+    padding: 20px 20px 10px 20px;
+  }
+
+  .update_form_title img {
+    width: 50%;
+  }
+
+  #Update_inputs input {
+    width: 550px;
+  }
+
+  .update_sub_btn {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .main_inner_update_page_container {
+    max-width: 475px;
+  }
+
+  .update_form_title h2 {
+    font-size: 1.8rem;
+  }
+
+  .update_form_title img {
+    width: 60%;
+  }
+
+  #Update_inputs input {
+    width: 450px;
+  }
+
+  .update_sub_btn {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .main_update_page_container {
+    padding: 10px;
+  }
+
+  .main_inner_update_page_container {
+    width: 100%;
+    padding: 0 10px 20px 10px;
+  }
+
+  .update_form_title h2 {
+    font-size: 1.6rem;
+  }
+
+  .update_form_title img {
+    width: 80%;
+  }
+
+  #Update_inputs input {
+    width: 300px;
+  }
+
+  .update_sub_btn {
+    width: 300px;
   }
 }
