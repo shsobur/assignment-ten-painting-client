@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import { IoStarHalf } from "react-icons/io5";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 const MyArtList = () => {
   const { user } = useContext(AuthContext) || {};
@@ -59,7 +60,7 @@ const MyArtList = () => {
     <div>
       <div className="text-center mt-5 p-5">
         <h2
-          className="font-semibold text-4xl pb-5 text-[#5882c6]"
+          className="font-semibold text-4xl pb-5 text-[#5882c6] font-serif"
           data-aos="fade-down"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="1000"
@@ -145,9 +146,11 @@ const MyArtList = () => {
                         </div>
                         <div className="flex items-center gap-10 ">
                           <div>
-                            <button className="btn btn-neutral btn-sm">
-                              Update
-                            </button>
+                            <Link to="/updatecraft">
+                              <button className="btn btn-neutral btn-sm">
+                                Update
+                              </button>
+                            </Link>
                           </div>
                           <div>
                             <button

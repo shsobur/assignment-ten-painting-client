@@ -12,7 +12,7 @@ const CraftItem = () => {
           <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
             <div className="text-center mt-5">
               <h1
-                className="font-semibold text-4xl pb-5 text-[#5882c6]"
+                className="font-semibold text-4xl pb-5 text-[#5882c6] font-serif"
                 data-aos="fade-down"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="1000"
