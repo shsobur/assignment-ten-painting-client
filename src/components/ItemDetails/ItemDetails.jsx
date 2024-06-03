@@ -7,7 +7,7 @@ const ItemDetails = () => {
 
   return (
     <div>
-      <section className="bg-gray-200 text-gray-800">
+      <section className="bg-gray-300 pb-5 text-gray-800">
         <div className="container max-w-6xl pt-5 mx-auto space-y-6 sm:space-y-2">
           <a
             rel="noopener noreferrer"

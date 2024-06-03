@@ -1,0 +1,140 @@
+.main_allCraftSection_container {
+  height: 70vh;
+  width: 100%;
+  margin-top: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://i.ibb.co/ZJtb403/abstract-pink-background-698452-702-Photoroom-2.jpg");
+}
+
+.main_inner_allCraftSection_container {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.main_allCraftSection_left_right_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.allCraftSection_left_contanier {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 40%;
+}
+
+.allCraftSection_left_contanier h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #5082d2;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.allCraftSection_left_contanier p {
+  color: #656565;
+  padding: 20px 10px 20px 10px;
+}
+
+.allCraftSection_right_contanier {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 60%;
+  padding: 10px 0 10px 0;
+}
+
+.right_container_inner_left_contain {
+  height: 100%;
+  width: 45%;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://i.ibb.co/G9bRdJQ/most-famous-paintings-2.jpg");
+}
+
+.right_container_inner_right_contain {
+  height: 100%;
+  width: 45%;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://i.ibb.co/y5ZXYs9/mcgill-library-XPd2-CXRy-Mgc-unsplash.jpg");
+}
+
+
+
+@media screen and (max-width: 1280px) {
+  .main_inner_allCraftSection_container {
+    max-width: 1042px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main_inner_allCraftSection_container {
+    max-width: 640px;
+  }
+  
+  .main_allCraftSection_left_right_container {
+    flex-direction: column;
+  }
+
+  .allCraftSection_left_contanier {
+    height: 50%;
+    width: 100%;
+  }
+
+  .allCraftSection_left_contanier h2 {
+    font-size: 2.2rem;
+    padding-top: 30px;
+  }
+
+  .allCraftSection_left_contanier p {
+    padding: 10px 40px 20px 40px;
+  }
+
+  .allCraftSection_right_contanier {
+    height: 40%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .main_inner_allCraftSection_container {
+    max-width: 475px;
+  }
+
+  .allCraftSection_left_contanier h2 {
+    font-size: 2rem;
+    padding-top: 30px;
+  }
+
+  .allCraftSection_left_contanier p {
+    padding: 10px 20px 20px 20px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .main_inner_allCraftSection_container {
+    width: 100%;
+  }
+
+  .allCraftSection_left_contanier h2 {
+    font-size: 1.8rem;
+    padding-top: 30px;
+  }
+
+  .allCraftSection_left_contanier p {
+    font-size: 14px;
+    padding: 10px 10px 20px 10px;
+  }
+}

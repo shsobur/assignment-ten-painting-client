@@ -15,6 +15,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import CraftSection from "../components/CraftSection/CraftSection";
+import AllCraftSection from "../components/AllCraftSection/AllCraftSection";
 
 const Home = () => {
   const { user } = useContext(AuthContext);
@@ -53,6 +54,7 @@ const Home = () => {
         </div>
       </div>
       <div>{user && <CraftSection></CraftSection>}</div>
+      <div><AllCraftSection></AllCraftSection></div>
     </div>
   );
 };

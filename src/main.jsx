@@ -61,8 +61,13 @@ const router = createBrowserRouter([
       },
       {
         path: "/updatecraft/:id",
-        element: <UpdateCraft></UpdateCraft>,
-        loader: ({params}) => fetch(`http://localhost:5000/addcraft/${params.id}`)
+        element: (
+          <PriverRoute>
+            <UpdateCraft></UpdateCraft>
+          </PriverRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/addcraft/${params.id}`),
       },
       {
         path: "craftsection",

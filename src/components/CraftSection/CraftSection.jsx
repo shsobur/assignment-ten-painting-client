@@ -52,7 +52,7 @@ const CraftSection = () => {
             </p>
             <Link to="/addcraft">
               <button className="btn btn-neutral text-lg pl-8 pr-8">
-                Craft
+                Add Craft
               </button>
             </Link>
           </div>
