@@ -12,9 +12,9 @@ import "../Styles/Header.css";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import CraftSection from "../components/CraftSection/CraftSection";
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
+import CraftSection from "../components/CraftSection/CraftSection";
 
 const Home = () => {
   const { user } = useContext(AuthContext);
@@ -37,14 +37,22 @@ const Home = () => {
             modules={[Autoplay, Pagination, Navigation]}
             className="mySwiper"
           >
-            {/* <SwiperSlide><img src="https://i.ibb.co/xF8ShYt/jr-korpa-KZTpv43fve8-unsplash.jpg"></img></SwiperSlide>
-        <SwiperSlide><img src="https://i.ibb.co/BL424wH/europeana-TF3g66-Jhs50-unsplash.jpg"></img></SwiperSlide>
-        <SwiperSlide><img src="https://i.ibb.co/BqbxzBN/boston-public-library-6-EDezf-Yu3uk-unsplash.jpg"></img></SwiperSlide>
-        <SwiperSlide><img src="https://i.ibb.co/4gsty2v/birmingham-museums-trust-4-GNk7lexu-Hw-unsplash.jpg"></img></SwiperSlide> */}
+            <SwiperSlide>
+              <img src="https://i.ibb.co/4fWQGRC/311-3ca91.webp"></img>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="https://i.ibb.co/gVtyMFC/most-popular-painters-artists-world.jpg"></img>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="https://i.ibb.co/Q6LQHPh/Action-Painting.jpg"></img>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="https://i.ibb.co/jGGfrRG/Screen-Shot-2020-05-08-at-8-18-29-PM-d1513b0a-3294-46d4-bf3a-2de7ff4c7811-2184x.png"></img>
+            </SwiperSlide>
           </Swiper>
         </div>
-        <div>{user && <CraftSection></CraftSection>}</div>
       </div>
+      <div>{user && <CraftSection></CraftSection>}</div>
     </div>
   );
 };

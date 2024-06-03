@@ -1,0 +1,142 @@
+.main_footer_container {
+  height: 60vh;
+  width: 100%;
+  margin-top: 50px;
+  background-color: #041122;
+}
+
+.main_inner_footer_container {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  color: #f0f0f0;
+}
+
+.inner_footer_section_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_container_one {
+  display: flex;
+  align-items: center;
+  height: 50vh;
+}
+
+.footer_container_one h2 {
+  font-size: 3.5rem;
+  font-weight: 600; 
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.footer_container_two {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 50vh;
+}
+
+.footer_container_two ul li{
+  margin-bottom: 20px;
+}
+
+.footer_container_three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 2rem;
+}
+
+.copyright_container {
+  height: 10vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+  .main_inner_footer_container{
+    max-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main_inner_footer_container {
+    max-width: 768px;
+  }
+
+  .footer_container_one h2 {
+    font-size: 3rem;
+  }
+
+  .footer_container_three {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main_inner_footer_container {
+    max-width: 640px;
+  }
+
+  .footer_container_one h2 {
+    font-size: 2.6rem;
+  }
+
+  .footer_container_three {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .main_inner_footer_container {
+    max-width: 475px;
+  }
+
+  .main_footer_container {
+    height: auto;
+  }
+
+  .inner_footer_section_container {
+    flex-direction: column;
+  }
+
+  .footer_container_one {
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .footer_container_two {
+    height: auto;
+    margin: 30px 0 30px 0;
+  }
+
+  .footer_container_three {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 475px)  {
+  .main_inner_footer_container {
+    width: 100%;
+  }
+}

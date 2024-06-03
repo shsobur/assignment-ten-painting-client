@@ -1,7 +1,11 @@
 .main_slider_container {
   height: 80vh;
   width: 100%;
-  border: 2px solid purple;
+  margin-top: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://i.ibb.co/kX0SWpD/abstract-pink-background-698452-702-Photoroom-2.jpg");
 }
 
 .main_inner_slider_container {
@@ -33,11 +37,31 @@
   object-fit: cover;
 }
 
-
-
-
 @media screen and (max-width: 1280px) {
   .main_inner_slider_container {
     max-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main_inner_slider_container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main_inner_slider_container {
+    max-width: 640px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .main_inner_slider_container {
+    max-width: 475px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .main_inner_slider_container {
+    width: 100%;
   }
 }
