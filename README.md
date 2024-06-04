@@ -1,6 +1,6 @@
 # Art Gallery
 
-## Live site URL: https://assignment-ten-painting-auth.web.app/craftitem
+## Live site URL: https://assignment-ten-painting-auth.web.app/
 
 ## Feature
 * Landscape Painting
