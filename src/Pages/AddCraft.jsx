@@ -35,7 +35,7 @@ const AddCraft = () => {
 
     console.log(newCraft);
 
-    fetch("http://localhost:5000/addcraft", {
+    fetch("https://assignment-ten-painting-server.vercel.app/addcraft", {
       method: "POST",
       headers: {
         "content-type": "application/json",

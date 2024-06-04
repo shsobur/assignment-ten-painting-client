@@ -10,7 +10,9 @@ const MyArtList = () => {
 
   useEffect(() => {
     if (user && user.email) {
-      fetch(`http://localhost:5000/myartlist/${user.email}`)
+      fetch(
+        `https://assignment-ten-painting-server.vercel.app/myartlist/${user.email}`
+      )
         .then((res) => res.json())
         .then((data) => {
           setMyArts(data);
@@ -32,9 +34,12 @@ const MyArtList = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/addcraft/${id}`, {
-          method: "DELETE",
-        })
+        fetch(
+          `https://assignment-ten-painting-server.vercel.app/addcraft/${id}`,
+          {
+            method: "DELETE",
+          }
+        )
           .then((res) => res.json())
           .then((data) => {
             if (data.deletedCount === 1) {

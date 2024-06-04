@@ -30,18 +30,22 @@ const router = createBrowserRouter([
       {
         path: "/craftitem",
         element: <CraftItem></CraftItem>,
-        loader: () => fetch("http://localhost:5000/addcraft"),
+        loader: () =>
+          fetch("https://assignment-ten-painting-server.vercel.app/addcraft"),
       },
       {
         path: "/allart",
         element: <AllArt></AllArt>,
-        loader: () => fetch("http://localhost:5000/addcraft"),
+        loader: () =>
+          fetch("https://assignment-ten-painting-server.vercel.app/addcraft"),
       },
       {
         path: "/itemdetails/:id",
         element: <ItemDetails></ItemDetails>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/addcraft/${params.id}`),
+          fetch(
+            `https://assignment-ten-painting-server.vercel.app/addcraft/${params.id}`
+          ),
       },
       {
         path: "/addcraft",
@@ -67,7 +71,9 @@ const router = createBrowserRouter([
           </PriverRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/addcraft/${params.id}`),
+          fetch(
+            `https://assignment-ten-painting-server.vercel.app/addcraft/${params.id}`
+          ),
       },
       {
         path: "craftsection",

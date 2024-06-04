@@ -46,7 +46,7 @@ const UpdateCraft = () => {
 
     console.log(updateCraft);
 
-    fetch(`http://localhost:5000/addcraft/${_id}`, {
+    fetch(`https://assignment-ten-painting-server.vercel.app/addcraft/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -219,9 +219,7 @@ const UpdateCraft = () => {
                   />
                 </div>
 
-                <div
-                  className="flex items-center justify-center mt-5"
-                >
+                <div className="flex items-center justify-center mt-5">
                   <label htmlFor="108">
                     <div>
                       <input
