@@ -1,4 +1,4 @@
-# Art Gellar
+# Art Gallery
 
 ## Live site URL: https://web.programming-hero.com/home
 
